@@ -4,6 +4,6 @@ com/yashika/blog/service/CommentService.class
 com/yashika/blog/controller/CommentController.class
 com/yashika/blog/controller/ArticleController.class
 com/yashika/blog/model/Article.class
-com/yashika/blog/App.class
 com/yashika/blog/model/Comment.class
+com/yashika/blog/BlogApplication.class
 com/yashika/blog/repository/CommentRepository.class
