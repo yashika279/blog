@@ -1,0 +1,9 @@
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/repository/CommentRepository.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/model/Article.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/controller/CommentController.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/App.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/model/Comment.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/repository/ArticleRepository.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/service/ArticleService.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/service/CommentService.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/controller/ArticleController.java
