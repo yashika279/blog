@@ -1,8 +1,8 @@
 package com.yashika.blog.model;
-import com.yashika.blog.model.Comment;
 import jakarta.persistence.*;
 import java.util.*;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.validation.constraints.*;
 
 @Entity
 public class Article {
@@ -10,7 +10,12 @@ public class Article {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+
+    @NotBlank(message = "Title is required")
     private String title;
+
+    @NotBlank(message = "Content is required")
+    @Size(min = 3, message = "Content must be at least 3 characters")
     private String content;
 
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
