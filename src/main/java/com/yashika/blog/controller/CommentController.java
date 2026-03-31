@@ -1,7 +1,6 @@
 package com.yashika.blog.controller;
 
 import com.yashika.blog.service.CommentService;
-import com.yashika.blog.model.Article;
 import com.yashika.blog.model.Comment;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
@@ -23,5 +22,10 @@ public class CommentController {
    @GetMapping("/article/{articleId}")
     public List<Comment> getComment(@PathVariable Long articleId){
         return commentService.getByArticleId(articleId);
+   }
+
+   @GetMapping("/article/{articleId}/count")
+    public long countComment(@PathVariable Long articleId){
+        return commentService.countCommentsByArticleId(articleId);
    }
 }
