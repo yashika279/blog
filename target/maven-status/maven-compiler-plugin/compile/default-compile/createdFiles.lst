@@ -2,6 +2,7 @@ com/yashika/blog/repository/ArticleRepository.class
 com/yashika/blog/service/EmailService.class
 com/yashika/blog/service/ArticleService.class
 com/yashika/blog/controller/ArticleController.class
+com/yashika/blog/controller/ArticleViewController.class
 com/yashika/blog/exception/GlobalExceptionHandler.class
 com/yashika/blog/model/Comment.class
 com/yashika/blog/BlogApplication.class

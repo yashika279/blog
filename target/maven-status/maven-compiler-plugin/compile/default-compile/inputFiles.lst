@@ -1,5 +1,6 @@
 /home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/model/Comment.java
 /home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/repository/ArticleRepository.java
+/home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/controller/ArticleViewController.java
 /home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/service/CommentService.java
 /home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/BlogApplication.java
 /home/developer/projects/java/java-apps/blog/src/main/java/com/yashika/blog/repository/CommentRepository.java
