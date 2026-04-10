@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import com.yashika.blog.event.ArticleCreatedEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import java.util.List;
+import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class ArticleService {
@@ -30,6 +31,31 @@ public class ArticleService {
 
     public void delete(Long id){
         articleRepo.deleteById(id);
+    }
+
+    public Article createWithImage(
+            String title,
+            String content,
+            MultipartFile file
+    ) throws IOException {
+
+        String uploadDir = "uploads/";
+
+        File dir = new File(uploadDir);
+        if (!dir.exists()) dir.mkdirs();
+
+        String fileName = UUID.randomUUID() + "_" + file.getOriginalFilename();
+        Path filePath = Paths.get(uploadDir + fileName);
+
+        Files.write(filePath, file.getBytes());
+
+        Article article = new Article();
+        article.setTitle(title);
+        article.setContent(content);
+        article.setImagePath("/uploads/" + fileName);
+
+        // 🔥 Reuse existing method
+        return create(article);
     }
 
 }

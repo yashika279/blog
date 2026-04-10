@@ -23,7 +23,12 @@ public class ArticleController {
     }
 
     @PostMapping
-    public Article create(@Valid @RequestBody Article article){
-        return service.create(article);
+    public Article create(
+            @RequestParam String title,
+            @RequestParam String content,
+            @RequestParam("image") MultipartFile file
+    ) throws IOException {
+
+        return service.createWithImage(title, content, file);
     }
 }
